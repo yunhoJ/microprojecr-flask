@@ -1,0 +1,7 @@
+requirements 추가 설치
+Jinja2==3.0.3
+Werkzeug==0.16.0 
+itsdangerous==2.0.1
+
+
+https://pypi.org/project/Flask-SQLAlchemy/
