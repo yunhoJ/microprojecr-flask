@@ -5,6 +5,7 @@ from flask_cors import CORS
 app = Flask(__name__)
 # mysql과 연결 
 app.config['SQLALCHEMY_DATABASE_URI']='mysql://root:root@db/main' # mysql에 유저네임 :페스워드 @호스트(docker서비스명)/db이름
+app.config['SQLALCHEMY_TRACK_MODIFICATIONS']=False
 CORS(app)
 # db 모델 구성 알키미 패키지를 이용해 모델처럼 구성한다 
 db=SQLAlchemy(app)
